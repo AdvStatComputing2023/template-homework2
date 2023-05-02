@@ -7,3 +7,9 @@ output: pdf_document
 fontsize: 11pt
 geometry: margin=1in
 ---
+
+
+```{r crime_data}
+crime <- read.table("crime.txt", sep = "\t")
+names(crime) <- c("rate", "violent_rate", "funding", "hs", "not_hs", "college", "college4")
+```
